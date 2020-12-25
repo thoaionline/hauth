@@ -72,5 +72,12 @@
     <orderEntry type="library" name="adjunctions-4.4" level="project" />
     <orderEntry type="library" name="invariant-0.5.3" level="project" />
     <orderEntry type="library" name="void-0.7.3" level="project" />
+    <orderEntry type="library" name="pcre-heavy-1.0.0.2" level="project" />
+    <orderEntry type="library" name="time-lens-0.4.0.2" level="project" />
+    <orderEntry type="library" name="base-compat-0.11.2" level="project" />
+    <orderEntry type="library" name="pcre-light-0.4.1.0" level="project" />
+    <orderEntry type="library" name="string-conversions-0.4.0.1" level="project" />
+    <orderEntry type="library" name="data-lens-light-0.1.2.2" level="project" />
+    <orderEntry type="library" name="utf8-string-1.0.1.1" level="project" />
   </component>
 </module>
