@@ -1,3 +1,5 @@
+{-# LANGUAGE ScopedTypeVariables #-}
+
 module Lib
   ( someFunc,
     timePlay,
@@ -7,11 +9,13 @@ module Lib
 where
 
 import ClassyPrelude
+import Data.Aeson (Value, decodeStrict)
+import qualified Data.Aeson
 import Data.Time.Clock.POSIX
 import Data.Time.Lens
 import Data.Time.LocalTime (getZonedTime)
-import Text.Regex.PCRE.Heavy
 import NeatInterpolation
+import Text.Regex.PCRE.Heavy
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
@@ -43,16 +47,19 @@ textPlay = do
 
 jsonPlay :: IO ()
 jsonPlay = do
-  let sample = [text|
-    {
-      "a": "b",
-      "c": {
-        "d": 5,
-        "e: {
-          "f": 7.0,
-          "g": null
-        }
-      }
-    }
-  |]
-  print sample
+  let sample =
+        [text|
+          {
+            "a": "b",
+            "c": {
+              "d": 5,
+              "e": {
+                "f": 7.0,
+                "g": null
+              }
+            }
+          }
+        |]
+      value :: Maybe Value = decodeStrict $ encodeUtf8 sample
+  putStrLn sample
+  print value

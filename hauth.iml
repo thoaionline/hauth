@@ -79,5 +79,17 @@
     <orderEntry type="library" name="string-conversions-0.4.0.1" level="project" />
     <orderEntry type="library" name="data-lens-light-0.1.2.2" level="project" />
     <orderEntry type="library" name="utf8-string-1.0.1.1" level="project" />
+    <orderEntry type="library" name="aeson-1.4.7.1" level="project" />
+    <orderEntry type="library" name="neat-interpolation-0.3.2.6" level="project" />
+    <orderEntry type="library" name="attoparsec-0.13.2.4" level="project" />
+    <orderEntry type="library" name="base-compat-batteries-0.11.2" level="project" />
+    <orderEntry type="library" name="scientific-0.3.6.2" level="project" />
+    <orderEntry type="library" name="time-compat-1.9.5" level="project" />
+    <orderEntry type="library" name="uuid-types-1.0.3" level="project" />
+    <orderEntry type="library" name="megaparsec-8.0.0" level="project" />
+    <orderEntry type="library" name="integer-logarithms-1.0.3.1" level="project" />
+    <orderEntry type="library" name="random-1.1" level="project" />
+    <orderEntry type="library" name="case-insensitive-1.2.1.0" level="project" />
+    <orderEntry type="library" name="parser-combinators-1.2.1" level="project" />
   </component>
 </module>
