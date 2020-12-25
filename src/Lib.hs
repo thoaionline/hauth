@@ -9,8 +9,7 @@ module Lib
 where
 
 import ClassyPrelude
-import Data.Aeson (Value, decodeStrict)
-import qualified Data.Aeson
+import Data.Aeson
 import Data.Time.Clock.POSIX
 import Data.Time.Lens
 import Data.Time.LocalTime (getZonedTime)
@@ -63,3 +62,7 @@ jsonPlay = do
       value :: Maybe Value = decodeStrict $ encodeUtf8 sample
   putStrLn sample
   print value
+  -- So we need to type hint everything?
+  let o = object ["a" .= ("b" :: Text), "c" .= (2 :: Int), "d" .= object ["e" .= ("f" :: Text)]]
+  -- r = fromJSON o :: Result Text
+  putStrLn $ pack $ show o
