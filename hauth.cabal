@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5295801823663ea4533ab9057b748228efd1afd0c810f463cc538eee3146a08f
+-- hash: da5c979a5d7dc74eac82453c2dc226fcd355929d10386e6b616563cd0c747000
 
 name:           hauth
 version:        0.1.0.0
@@ -34,8 +34,10 @@ library
       src
   default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , classy-prelude
+    , neat-interpolation
     , pcre-heavy
     , time
     , time-lens
@@ -50,9 +52,11 @@ executable hauth-exe
   default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , classy-prelude
     , hauth
+    , neat-interpolation
     , pcre-heavy
     , time
     , time-lens
@@ -68,9 +72,11 @@ test-suite hauth-test
   default-extensions: NoImplicitPrelude OverloadedStrings QuasiQuotes
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , classy-prelude
     , hauth
+    , neat-interpolation
     , pcre-heavy
     , time
     , time-lens

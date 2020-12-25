@@ -30,6 +30,8 @@ dependencies:
 - time
 - time-lens
 - pcre-heavy
+- neat-interpolation
+- aeson
 
 library:
   source-dirs: src
